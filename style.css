@@ -1,6 +1,6 @@
 .tablo {
-    text-align: right;
-    font-size: x-large;
+    text-align: center;
+    font-size: xx-large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(68, 148, 32);
 }
@@ -13,38 +13,45 @@
 }
 .tablo-1 {
     text-align: right;
-    font-size: larger;
+    font-size: xx-large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.kar {
-    text-align: right;
-    margin-left: 540px;
-}
-.kar-2 {
-    text-align: right;
-    margin-left: 540px;
-}
-.kar-3 {
-    text-align: right;
-    margin-left: 540px;
-}
-.kar-4 {
-    text-align: right;
-    margin-left: 540px;
-}
-.kar-5 {
-    text-align: right;
-    margin-left: 540px;
-}
-.kar-6 {
-    text-align: right;
-    margin-left: 540px;
-}
-.kar-7 {
-    text-align: right;
-    margin-left: 540px;
-}
-.kar-8 {
-    text-align: right;
-    margin-left: 540px;
-}
+/* ساختار کلی صفحه */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* بدنه سایت با فلکس‌باکس */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* ارتفاع کل صفحه */
+  }
+  
+  /* محتوای اصلی وسط صفحه */
+  main {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* فوتر */
+  footer {
+    background-color: #001d6b;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .box {
+    background-color: #f5f7ff;          /* رنگ پس‌زمینه ملایم */
+    border-radius: 15px;                /* گوشه‌های نیم‌دایره */
+    padding: 20px;                      /* فاصله داخلی */
+    width: 80%;                         /* عرض جعبه */
+    margin: 30px auto;                  /* وسط‌چین شدن */
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1); /* سایه ملایم */
+    text-align: right;                  /* تراز متن */
+    direction: rtl;                     /* راست‌چین برای فارسی */
+    font-size: xx-large;
+  }
+  
